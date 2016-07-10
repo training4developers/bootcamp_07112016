@@ -52,7 +52,7 @@ Breaks:
 
 This is a starter project for creating a React/Relay/GraphQL application.
 
-## Application Setup
+### Application Setup
 
 Step 1. Download Install Node.js version 6 or higher. Version 6 or higher MUST be installed. If you have an older Node.js version that you need to keep, then use something like [NVM](https://www.npmjs.com/package/nvm) to manage multiple Node.js installations. To install Node.js click [here](https://nodejs.org).
 
@@ -122,7 +122,7 @@ Restart Atom, then re-attempt to install the **react** package again.
 
 JavaScript & HTML linting support can be added by installing the **linter**, **linter-htmlhint**, and **linter-eslint** packages.
 
-## NPM Scripts Command Reference
+### NPM Scripts Command Reference
 
 From a terminal, in the root project folder (where the **package.json** file exists), the following commands can be executed to perform various project development tasks.
 
@@ -134,7 +134,7 @@ From a terminal, in the root project folder (where the **package.json** file exi
 - **npm run server** - builds the server application, and deploys it to the **dist** folder
 - **npm run update-schema** - updates the GraphQL schema for RelayQL
 
-## Useful Resources
+### Useful Resources
 
 - [React](https://facebook.github.io/react/)
 - [GraphQL](http://graphql.org/)
