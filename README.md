@@ -29,7 +29,7 @@ Breaks:
 
 - Day 6 - React (Advanced)
 - Day 7 - MVC, Flux, Redux, Relay (Part 1 of 2)
-- Day 8 - MVC, Flux, Redux, Relay (Part 1 of 2)
+- Day 8 - MVC, Flux, Redux, Relay (Part 2 of 2)
 - Day 9 - Project Day
 - Day 10 - Remaining Items... (SASS, Unit Testing, Other Technologies)
 
