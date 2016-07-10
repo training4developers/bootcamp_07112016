@@ -58,7 +58,7 @@ Step 1. Download Install Node.js version 6 or higher. Version 6 or higher MUST b
 
 Step 2. Download and Install MongoDB. To download MongoDB click [here](https://www.mongodb.com/download-center#community).
 
-Step 3. Download this repository from [here](https://github.com/training4developers/react-relay-starter/archive/master.zip). Extract the zip file to a working folder on your system.
+Step 3. Download this repository from [here](https://github.com/training4developers/bootcamp_07112016/archive/master.zip). Extract the zip file to a working folder on your system.
 
 Step 4. Open a terminal window. From the terminal prompt, run the following commands.
 
