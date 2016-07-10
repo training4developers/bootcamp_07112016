@@ -1,6 +1,54 @@
-# React/Relay/GraphQL Starter Project
+# Welcome to the Front-End Web Development Bootcamp!
 
-## Overview
+## Instructor
+
+Eric Greene - [http://t4d.io](http://t4d.io) - [LinkedIn](https://www.linkedin.com/in/ericwgreene)
+
+## Schedule
+
+Class:
+- Monday - Friday: 9am to 5pm
+
+Breaks:
+- Morning: 10:25am to 10:35am
+- Lunch: Noon to 1pm
+- Afternoon #1: 2:15pm to 2:25pm
+- Afternoon #2: 3:40pm to 3:50pm
+
+## Course Outline
+
+### Week 1
+
+- Day 1 - HTML & CSS
+- Day 2 - CSS & JavaScript (Essentials for React)
+- Day 3 - React (Introduction)
+- Day 4 - JavaScript (Full Topic)
+- Day 5 - REST, GraphQL, Asynchronous Programming
+
+### Week 2
+
+- Day 6 - React (Advanced)
+- Day 7 - MVC, Flux, Redux, Relay (Part 1 of 2)
+- Day 8 - MVC, Flux, Redux, Relay (Part 1 of 2)
+- Day 9 - Project Day
+- Day 10 - Remaining Items... (SASS, Unit Testing, Other Technologies)
+
+## Links
+
+### Instructor's Resources
+
+- [Eric's Blog](http://t4d.io/)
+- [WintellectNOW](https://www.wintellectnow.com/Home/Instructor?instructorId=EricGreene) - Special Offer Code: GREENE-2016
+- [React Blog Posts](https://github.com/training4developers/react-flux-blog)
+- [TopTal Angular Directive](https://www.toptal.com/angular-js/angular-js-demystifying-directives)
+- [React SitePoint](http://www.sitepoint.com/author/ericgreene/)
+
+### Other Resources
+
+- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [JavaScript Air Podcast](http://javascriptair.podbean.com/)
+
+## Setup Instructions
 
 This is a starter project for creating a React/Relay/GraphQL application.
 
