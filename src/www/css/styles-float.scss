@@ -1,0 +1,30 @@
+$text-color: black;
+
+body {
+	color: $text-color;
+}
+
+div {
+	position:absolute;
+	top:30px;left:30px;bottom:0;right:0;
+	border:2px solid blue;
+}
+
+.center-me {
+
+	width:10%;
+	height:10%;
+	border:5px solid green;
+
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-5%;
+	margin-left:-5%;
+	box-sizing: border-box;
+
+	// margin-left:auto;
+	// margin-right:auto;
+
+}
+

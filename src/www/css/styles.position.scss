@@ -1,0 +1,42 @@
+$text-color: black;
+
+body {
+	color: $text-color;
+	margin:0;
+	padding:0;
+}
+
+body > div {
+
+	margin:20px;
+	border:3px solid green;
+	// position:relative;
+
+}
+
+// div is a first child
+// not, first child of the div
+
+div > div {
+	padding:30px;
+	margin:20px;
+
+	position:static;
+}
+
+div > div:first-child {
+	border:3px solid blue;
+}
+
+div > div:nth-child(2) {
+	border:3px solid red;
+	margin:0;
+	position:fixed;
+
+	top: 100px;
+	left: 300px;
+}
+
+div > div:last-child {
+	border:3px solid orange;
+}

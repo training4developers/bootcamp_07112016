@@ -4,6 +4,7 @@
   "description": "Starter project for React/Relay/GraphQL",
   "main": "index.js",
   "scripts": {
+    "db": "~/mongodb/bin/mongod --dbpath ~/mongodb/data/db && node index",
     "start": "node index",
     "postinstall": "npm run build",
     "clean": "rimraf dist",

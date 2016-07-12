@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+
+		<script>
+
+			'use strict';
+
+			function outer() {
+
+				var t = "gotta catch 'em all";
+
+				setTimeout(function() {
+					t = 'did not catch them all';
+				},2000);
+
+				return function inner() {
+					console.log(t);
+				}
+
+				//inner();
+			}
+
+			var fn = outer();
+			fn();
+
+			setTimeout(function() {
+				fn();
+			},4000);		
+
+			console.dir(fn);	
+
+
+		</script>
+
+	</body>
+
+</html>

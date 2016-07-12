@@ -1,0 +1,23 @@
+$text-color: black;
+
+body {
+	color: $text-color;
+}
+
+body > div {
+	border: 3px solid green;
+	height: 500px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div > div {
+	border: 2px solid blue;
+	padding:20px;
+	width:100px;
+}
+

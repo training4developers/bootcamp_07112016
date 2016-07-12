@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+
+		<script>
+
+			'use strict';
+
+			var o = {
+				name: 'Bob',
+				age: 78,
+				hairColor: 'white',
+				address: {
+					street: '123 Oak Lane',
+					city: 'Mountain View',
+					state: 'CA',
+					zipCode: '94043'
+				},
+				getInfo: function() {
+					return this.name + ' ' + this.age;
+				}
+			};
+
+			console.dir(o);
+			console.log(o.getInfo());
+
+			var y = {};
+
+			y.doSomething = o.getInfo;
+
+
+
+		</script>
+
+	</body>
+
+</html>

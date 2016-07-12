@@ -1,0 +1,30 @@
+$text-color: black;
+
+body {
+	color: $text-color;
+}
+
+.row {
+	border:3px solid red;
+	overflow:auto;
+}
+
+.col-1, .col-3, .col-4 {	
+	float:left;
+	box-sizing: border-box;
+	border:3px solid blue;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.col-1 {
+ width:25%;
+}
+
+.col-3 {
+ width:75%;
+}
+
+.col-4 {
+ width:100%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+
+		<script>
+
+			'use strict';
+
+			var x=0, y=0, funcs=[];
+
+			for (;x<5;x++) {
+				// modify the code between here
+				// you cannot use y in your code
+				// you cannot output x to the console in the first loop
+
+				(function s(u) {
+					funcs.push(function() {
+						console.log(u);
+					});
+				})(x);
+
+				// and here
+			}
+
+			for (;y<5;y++) {
+				funcs[y]();
+			}
+
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,28 @@
+$text-color: black;
+
+body {
+	color: $text-color;
+}
+
+body > div {
+	border: 2px solid red;
+	height:400px;
+
+	display: flex;
+	// flex-direction: row;
+	// flex-wrap: nowrap;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+div > div {
+	border: 2px solid blue;
+	width:50px;
+	flex-grow:1;
+}
+
+div > div:nth-child(3) {
+	// order: 2;
+	flex-grow: 2;
+}
