@@ -2,63 +2,12 @@
 
 <html>
 
-	<head>
-		<title>React/Relay/GraphQL Starter Application</title>
-	</head>
+<head>
+	<title>React/Relay/GraphQL Starter Application</title>
+</head>
 
-	<body>
-		<main>
+<body>
 
-			<div class='orientation'>
-				<div class='landscape'>Landscape</div>
-				<div class='portrait'>Portrait</div>
-			</div>
-
-			<div class='viewport'>
-				<div class='mobile'>Mobile</div>
-				<div class='desktop'>Desktop</div>
-			</div>
-
-			<div class='print'>Print</div>
-			<div class='screen demo'>Screen</div>			
-
-
-		</main>
-
-		<script>
-
-			'use strict';
-
-			const nums = [1,2,3,4,5];
-
-			const myNums = {
-				nums: [1,2,3,4,5],
-				[Symbol.iterator]: function* getNums() {
-					for (let x=0; x<nums.length; x++) {
-						console.log('iterated getNums');
-						yield nums[x] * 2;
-					}
-				}
-			}
-
-			const masterIdProp = Symbol();
-
-			myNums[masterIdProp] = 3;
-			
-
-			for (let n of myNums) {
-				//console.log('iterated of loop');
-				//setTimeout(function() {
-					console.log('timeout expired');
-					if (n > 5) {
-						console.log(n);
-					}
-				//},0);
-
-			}			
-
-		</script>
-
-	</body>
+</body>
 
 </html>

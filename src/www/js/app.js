@@ -1,17 +1,13 @@
 import 'bootstrap-loader';
 import '../css/styles.scss';
 
-const nums = [1,2,3,4,5];
+try {
 
-// for (let x=0; x<nums.length; x++) {
-// 	nums[x] = nums[x] * 2;
-// 	if (nums[x] > 5) {
-// 		console.log(nums[x]);
-// 	}
-// }
+	//setTimeout(function() {
+	throw Error('Trevor Noah did not get an Emmy...');
+	//}, 0);
 
-// for (let x=0; x<nums.length; x++) {
-
-// }
-
-
+} catch (err) {
+	console.error(err);
+	console.log('caught it!');
+}
