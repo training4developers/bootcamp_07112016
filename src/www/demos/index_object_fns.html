@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+		<main></main>
+		<script>
+
+			'use strict';
+
+			const colors = ['red','white','blue'];
+
+			console.log(colors instanceof Array);
+
+			function SummerIntern() {
+
+			}
+
+			var si = new SummerIntern();
+
+			class SummerIntern2 {
+
+			}
+
+			var si2 = new SummerIntern2();
+
+			console.log(si2 instanceof SummerIntern2);
+
+
+			console.log(Object.getPrototypeOf(si) === SummerIntern.prototype);
+
+
+			var p = { amt: 2000000000000000/68, currency: 'INR' };
+
+			var c = Object.create(p);
+			c.name = 'Zanzabar';
+
+			for (var prop in c) {
+				if (c.hasOwnProperty(prop)) {
+					console.log(prop + '=' + c[prop]);
+				}
+			}
+
+
+
+		</script>
+	</body>
+
+</html>

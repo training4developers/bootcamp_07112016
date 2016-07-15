@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+		<main></main>
+		<script>
+
+			'use strict';
+
+			const ryan = {};
+
+			//ryan.firstName = 'Ryan';
+
+			Object.defineProperty(ryan, 'firstName', {
+				configurable: true,
+				enumerable: true,
+				// value: 'Ryan',
+				// writable: false
+				get: function() {
+					console.log('getting');
+					return this._firstName;
+				},
+				set: function(value) {
+					console.log('setting');
+					this._firstName = value;
+				}
+			});
+
+			//Object.defineProperty(ryan, 'firstName', {
+			//	configurable:false;
+
+			Object.seal(ryan);
+
+			Object.isExtensible(ryan)
+
+			if (Object.isExtensible(princeton)) {
+				console.log('he will maybe learn new things...');
+			} else {
+				console.log('he will buy more stuff on Amazon...');
+			}
+
+			ryan.firstName = 'Chong';
+
+			console.dir(ryan);
+
+			for (var prop in ryan) {
+				console.log(prop + '=' + ryan[prop]);
+			}
+
+			function PersonOld() {
+				this._fn = 'Bob';
+				this._ln = 'John';
+			}
+
+			Object.defineProperty(PersonOld.prototype, 'firstName', {
+				get: 
+			}
+
+			var p2 = new PersonOld();
+			Object.defineProperty(p2, )
+
+			class Person {
+				constructor(fn, ln) {
+					this._fn = fn;
+					this._ln = ln;
+					this.onChange = this.onChange.bind(this);
+				}
+
+				get firstName() {
+					return this._fn;
+				}
+
+				set firstName(value) {
+					this._fn = value;
+				}
+
+				onChange(e) {
+					console.log('hope and change');
+				}
+
+			}
+
+			var p = new Person('Brad','Pitt');
+
+			console.dir(p);
+
+
+		</script>
+	</body>
+
+</html>

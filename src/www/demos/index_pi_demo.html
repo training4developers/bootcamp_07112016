@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+		<main></main>
+		<script>
+
+			'use strict';
+
+			var eric = { name: 'eric', amt: 1000, address: { 
+				state: 'VA', town: 'Amherst'
+			} };
+
+			var sarah = Object.create(eric);
+			sarah.name = 'sarah';
+
+			console.dir(sarah);
+			console.log(sarah.amt);
+
+			eric.amt = 500;
+
+			console.log(sarah.amt);
+
+			sarah.amt = 10;
+
+			console.log(sarah.amt);
+			console.dir(sarah);
+
+			delete sarah.amt;
+			console.log(sarah.amt);
+			console.log(sarah.address.town);
+
+			sarah.address.town = 'Bedford';
+			console.dir(sarah);
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+		<main></main>
+		<script>
+
+			'use strict';
+
+			function Person(fn, ln) {
+				this.fn = fn;
+				this.ln = ln;
+			}
+
+			Person.createPerson = function(name) {
+					var nameParts = name.split(' ');
+					return new Person2(nameParts[0], nameParts[1]);
+			};
+
+			Person.prototype.getFullName = function() {
+				return this.fn + ' ' + this.ln;
+			};
+
+			function Student(studentId, fn, ln) {
+				this._super.call(this, fn, ln);
+				this.studentId = studentId;
+			}
+
+			Student.prototype = Object.create(Person.prototype);
+			Student.prototype.constructor = Student;
+			Student.prototype._super = Person;
+
+			var p = new Person('Brad','Smith');
+			//console.dir(p);
+			
+			//console.log(p.fn, p.ln);
+
+			class Person2 {
+
+				static createPerson(name) {
+					var nameParts = name.split(' ');
+					return new Person2(nameParts[0], nameParts[1]);
+				}
+
+				constructor(fn, ln) {
+					this.fn = fn;
+					this.ln = ln;
+				}
+
+				getFullName() {
+					Person2.createPerson
+					return this.fn + ' ' + this.ln;
+				}
+			}
+
+			class Student2 extends Person {
+				constructor(studentId, fn, ln) {
+					super(fn, ln);
+					this.studentId = studentId;
+				}
+			}
+
+			var p2 = new Person2('Brad','Smith');
+			//console.log(p2.fn, p2.ln);
+
+			console.dir(p);
+			console.dir(p2);
+
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>React/Relay/GraphQL Starter Application</title>
+	</head>
+
+	<body>
+		<main></main>
+		<script>
+
+			'use strict';
+
+			var o = {
+				firstName: 'Ganesh',
+				lastName: 'Movva',
+				address: {
+					city: 'Chennai',
+					state: 'Tamil Nadu'
+				}
+			};
+
+			// phoned in from India...
+			Object.preventExtensions(o);
+
+			o.hobby = 'catch invisible monsters';
+
+			//var t = o.address;
+			// Object.freeze(t);
+
+			// Object.freeze(o);
+
+			//o.lastName = 'Kedar';
+			o.address.city = 'Cochin';
+
+			console.dir(o);
+
+
+		</script>
+	</body>
+
+</html>
