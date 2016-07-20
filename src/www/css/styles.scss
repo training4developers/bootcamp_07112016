@@ -1,43 +1,51 @@
-@media (orientation: landscape) {
-	.portrait {
-		display: none;
+@import 'theme';
+
+body {
+	color: $text-color;
+}
+
+article {
+
+	> h1 { color: blue; }
+
+	> p {
+		color:red;
+	 	li { color: yellow }
 	}
 }
 
-@media (orientation: portrait) {
-	.landscape {
-		display: none;
-	}
-	@media (max-width: 480px) {
-		.desktop {
-			display: none;
-		}
-		.landscape-desktop {
-			display: none;
-		}
+a {
+	text-decoration:none;
+
+	&:hover {
+		text-decoration: underline;
 	}
 }
 
-@media (max-width: 480px) {
-	.desktop {
-		display: none;
-	}
+@mixin textColor($text-color, $background-color: black) {
+	color: $text-color;
+	background-color: $background-color;
 }
 
-@media (min-width: 481px) {
-	.mobile {
-		display: none;
-	}
+p {
+	@include textColor(green, blue);
 }
 
-@media screen {
-	.print {
-		display: none;
-	}
+.boxes {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
 }
 
-@media print {
-	.screen {
-		display: none;
-	}
+div {
+	@extend .boxes;
+	width: 100% * (1/3);
 }
+
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+
+
+
