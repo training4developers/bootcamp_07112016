@@ -1,0 +1,51 @@
+@import 'theme';
+
+body {
+	color: $text-color;
+}
+
+article {
+
+	> h1 { color: blue; }
+
+	> p {
+		color:red;
+	 	li { color: yellow }
+	}
+}
+
+a {
+	text-decoration:none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+@mixin textColor($text-color, $background-color: black) {
+	color: $text-color;
+	background-color: $background-color;
+}
+
+p {
+	@include textColor(green, blue);
+}
+
+.boxes {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+div {
+	@extend .boxes;
+	width: 100% * (1/3);
+}
+
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+
+
+

@@ -89,10 +89,15 @@ export const getWidgets = () => {
 	});
 };
 
-export const insertWidget = (widget) =>
-	new Promise((resolve, reject) =>
-		(new WidgetModel(widget)).save((err, results) =>
-			err ? reject(err) : resolve(results ? new Widget(results) : null)));
+export const insertWidget = (widget) => {
+	console.log('insert');
+	console.dir(widget);
+	return new Promise((resolve, reject) =>
+		(new WidgetModel(widget)).save((err, results) => {
+			console.log(err);
+			err ? reject(err) : resolve(results ? new Widget(results) : null);
+		}));
+};
 
 export const updateWidget = (widget) =>
 	new Promise((resolve, reject) =>

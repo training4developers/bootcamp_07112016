@@ -1,51 +1,22 @@
-@import 'theme';
-
 body {
-	color: $text-color;
+	color:black;
 }
 
-article {
-
-	> h1 { color: blue; }
-
-	> p {
-		color:red;
-	 	li { color: yellow }
-	}
+.red-box {
+	position:absolute;
+	top:200px;
+	left:200px;
+	width:400px;
+	height:100px;
+	background-color:red;
+	z-index:100;
 }
 
-a {
-	text-decoration:none;
-
-	&:hover {
-		text-decoration: underline;
-	}
+.blue-box {
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:400px;
+	height:100px;
+	background-color:blue;
 }
-
-@mixin textColor($text-color, $background-color: black) {
-	color: $text-color;
-	background-color: $background-color;
-}
-
-p {
-	@include textColor(green, blue);
-}
-
-.boxes {
-	box-sizing: border-box;
-	margin:0;
-	padding:0;
-}
-
-div {
-	@extend .boxes;
-	width: 100% * (1/3);
-}
-
-@for $i from 1 through 3 {
-  .item-#{$i} { width: 2em * $i; }
-}
-
-
-
-

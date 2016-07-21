@@ -22,8 +22,8 @@ export default function(config) {
 		const server = http.createServer(app);
 		const graphqlHttpConfig = schema => ({ schema, pretty: true, graphiql: true });
 
-		app.use('/graphql-relay', graphqlHttp(graphqlHttpConfig(schemaRelay)));
-		app.use('/graphql', graphqlHttp(graphqlHttpConfig(schema)));
+		app.use('/graphql', graphqlHttp(graphqlHttpConfig(schemaRelay)));
+		app.use('/graphql-original', graphqlHttp(graphqlHttpConfig(schema)));
 		app.use('/api', bodyParser.json());
 		app.use('/api', widgetRouter);
 

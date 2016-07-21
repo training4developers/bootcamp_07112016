@@ -1,48 +1,67 @@
-import { createStore, combineReducers } from 'redux';
+import 'bootstrap-loader';
+import '../css/styles.scss';
 
-const INCREMENT = 'INCREMENT';
+import React from 'react';
+import Relay from 'react-relay';	
+import ReactDOM from 'react-dom';
 
-const incrementAction = () => ({ type: INCREMENT });
+import WidgetToolContainer from './containers/widget-tool-container';
+import ViewerRoute from './routes/viewer-route';
 
-// code from the store for handling actions
-const reducer = (state = { i: 0 }, action) => {
+ReactDOM.render(
+	<Relay.RootContainer Component={WidgetToolContainer} route={new ViewerRoute()} />,
+	document.querySelector('main')
+);
 
-	switch (action.type) {
+// const newWidget = {
+// 	name: 'te\\\"st',
+// 	description: 'test',
+// 	color: 'red',
+// 	size: 'large',
+// 	quantity: 23,
+// 	owner: {
+// 		id: 2,
+// 		name: 'Tom'
+// 	}
+// };
 
-		case INCREMENT: 
-			state = Object.assign({}, state, { i: ++state.i });
-			break;
-	}
+// const query = `mutation {
+//   insertWidget(widget: {
+//     name: "${newWidget.name}",
+//     description: "${newWidget.description}",
+//     color: "${newWidget.color}",
+//     size: "${newWidget.size}",
+//     quantity: ${newWidget.quantity},
+//     owner: {
+//       id: ${newWidget.owner.id},
+//       name: "${newWidget.owner.name}"
+//     }}) {
+//     id,
+//     name,
+//     description,
+//     color,
+//     size,
+//     quantity,
+//     owner {
+//       id,
+//       name
+//     }
+//   }
+// }`;
 
-	return state;
-};
+// const requestBody = {
+// 	query,
+// 	variables: null,
+// 	operationName: null
+// };
 
-const reducer2 = (state = { i: 0 }, action) => {
+// //fetch('/graphql-original?query={widgets{id,name,description}}')
 
-	switch (action.type) {
-
-		case INCREMENT: 
-			state = Object.assign({}, state, { i: ++state.i });
-			break;
-	}
-
-	return state;
-};
-
-
-// store object itself
-const store = createStore(combineReducers(reducer, reducer2));
-
-// flux add change listener
-const unsubscribe = store.subscribe(() => {
-	console.log(store.getState().i);
-});
-
-store.dispatch(incrementAction());
-store.dispatch(incrementAction());
-store.dispatch(incrementAction());
-
-
-// flux remove change listener
-unsubscribe();
-
+// fetch('/graphql-original', {
+// 	method: 'POST',
+// 	body: JSON.stringify(requestBody),
+// 	headers: {
+// 		'Content-Type': 'application/json'
+// 	}
+// }).then(res => res.json())
+// 	.then(results => console.dir(results.data));

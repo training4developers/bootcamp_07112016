@@ -31,13 +31,13 @@ const fetchWidgets = dispatch => {
 const widgets = (state = {}, action) => {
 	switch (action.type) {
 		case actionTypes.REQUEST_WIDGETS:
-			return {
+			return Object.assign({}, state, {
 				widgets: []
-			};
+			});
 		case actionTypes.RECEIVE_WIDGETS:
-			return {
+			return Object.assign({}, state, {
 				widgets: action.widgets
-			};
+			});
 		default:
 			return state;
 	}

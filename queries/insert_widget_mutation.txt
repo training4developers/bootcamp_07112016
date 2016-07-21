@@ -1,6 +1,6 @@
 mutation {
   insertWidget(widget: {
-    name: "New Widget",
+    "name": "New Widget",
     description: "New Widget Description",
     color: "red",
     size: "small",

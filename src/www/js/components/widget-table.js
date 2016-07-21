@@ -1,20 +1,23 @@
 import React from 'react';
 
-export const WidgetTableComponent = props => <div>
-	<table>
-		<thead>
+export class WidgetTableComponent extends React.Component {
+
+	render() {
+
+		console.dir(this.props);
+
+		return <table>
 			<tr>
 				<th>Name</th>
 				<th>Color</th>
-				<th>Action</th>
 			</tr>
-		</thead>
-		<tbody>
-			{props.widgets.map(widget => <tr key={widget.id}>
-				<td>{widget.name}</td>
-				<td>{widget.color}</td>
-				<td><button onClick={props.viewWidget.bind(null, widget.id)}>View</button></td>
+			{this.props.widgets.edges.map(edge => <tr key={edge.node.id}>
+				<td>{edge.node.name}</td>
+				<td>{edge.node.color}</td>
 			</tr>)}
-		</tbody>
-	</table>
-</div>;
+		
+		</table>;
+	}
+
+
+}
